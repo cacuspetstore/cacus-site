@@ -1,0 +1,20 @@
+---
+layout: default
+title: Blog da Cacus Pet
+description: Guias sobre vacinas, vermífugos, remédios e rotina do pet, e conteúdo para veterinários e clínicas.
+---
+<section class="blog-hero">
+  <span class="eyebrow">Blog</span>
+  <h1>Cuidar bem fica mais fácil quando a informação é clara.</h1>
+  <p>Guias para tutores, conteúdo para profissionais e as novidades da Cacus.</p>
+</section>
+<ul class="posts">
+{% for post in site.posts %}
+  <li class="card">
+    <span class="eyebrow{% if post.publico == 'profissionais' %} coral{% endif %}">{% if post.publico == 'profissionais' %}Para profissionais{% elsif post.publico == 'novidades' %}Novidades{% else %}Para tutores{% endif %}</span>
+    <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+    <p>{{ post.description | default: post.excerpt | strip_html | truncate: 160 }}</p>
+    <span class="meta">{{ post.date | date: "%d/%m/%Y" }} · {{ post.author }}</span>
+  </li>
+{% endfor %}
+</ul>

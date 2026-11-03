@@ -1,3 +1,33 @@
 # cacus-site
 
-Página institucional da Cacus Pet (cacuspet.com.br), publicada via GitHub Pages a partir da branch main.
+Página institucional da Cacus Pet (cacuspet.com.br) e o **Blog da Cacus** (cacuspet.com.br/blog), publicados via GitHub Pages a partir da branch `main`.
+
+- `index.html` — página institucional (HTML puro, sem build).
+- `blog/`, `_posts/`, `_layouts/`, `_includes/`, `_config.yml` — blog em Jekyll (o GitHub Pages compila sozinho a cada push).
+- `assets/cacus-symbol.png` — símbolo oficial da marca (não alterar).
+
+## Como publicar um post
+
+1. Crie um arquivo em `_posts/` com o nome `AAAA-MM-DD-titulo-em-minusculas-sem-acento.md`.
+2. Comece com o cabeçalho:
+
+   ```
+   ---
+   title: "Título do post"
+   description: "Uma frase que resume o post (aparece no Google e na lista)."
+   publico: tutores        # tutores | profissionais | novidades
+   author: "Cacus Pet"     # opcional; padrão "Cacus Pet"
+   revisao: ""             # opcional, ex.: "Amanda Marson, médica veterinária"
+   ---
+   ```
+
+3. Escreva o texto em Markdown abaixo do cabeçalho. Use `##` para seções; sem `#` de título (o layout já põe).
+4. Abra um pull request. Depois do merge em `main`, o post entra no ar em 1–2 minutos.
+
+## Regras de conteúdo
+
+- Português do Brasil, direto, sem jargão. Marca sempre "Cacus" (nunca "Cacús"); o assistente é "o Cacus".
+- Posts para tutores e profissionais recebem automaticamente o aviso "não substitui a consulta veterinária". Nunca recomendar dose, remédio ou tratamento específico.
+- Não citar a cidade da sede. Não divulgar o número de vagas do programa de clínicas fundadoras ("restam poucas vagas" é o máximo).
+- Links para produtos: Care `https://app.cacuspet.com.br/login`, Pro `https://pro.cacuspet.com.br/fundadores`, Store `https://cacuspetstore.com.br`. O layout já coloca a chamada final conforme o `publico`.
+- Imagens: só com direito de uso; salvar em `assets/blog/` e referenciar com caminho absoluto (`/assets/blog/arquivo.jpg`).

@@ -1,0 +1,19 @@
+---
+layout: default
+---
+<article class="post">
+  <span class="eyebrow{% if page.publico == 'profissionais' %} coral{% endif %}">{% if page.publico == 'profissionais' %}Para profissionais{% elsif page.publico == 'novidades' %}Novidades da Cacus{% else %}Para tutores{% endif %}</span>
+  <h1>{{ page.title }}</h1>
+  <p class="meta">{{ page.date | date: "%d/%m/%Y" }} · {{ page.author }}{% if page.revisao %} · Revisão: {{ page.revisao }}{% endif %}</p>
+  {{ content }}
+  {% if page.publico != 'novidades' %}<p class="aviso">Este texto é informativo e não substitui a avaliação de um médico veterinário. Em caso de dúvida ou urgência, procure um profissional.</p>{% endif %}
+  <div class="cta">
+    {% if page.publico == 'profissionais' %}
+    <div><strong>Cacus Professional</strong><br>Laudos, agenda e pacientes num lugar só, ligados ao tutor.</div>
+    <a class="btn btn-solid" href="https://pro.cacuspet.com.br/fundadores">Conhecer o programa de fundadores</a>
+    {% else %}
+    <div><strong>Cacus Pet Care</strong><br>Carteirinha, lembretes e o histórico do seu pet, com o Cacus ao seu lado.</div>
+    <a class="btn btn-solid" href="https://app.cacuspet.com.br/login">Começar grátis</a>
+    {% endif %}
+  </div>
+</article>

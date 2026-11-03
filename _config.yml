@@ -1,0 +1,17 @@
+title: Blog da Cacus Pet
+description: Cuidado contínuo do pet, ligado ao veterinário. Guias para tutores e para profissionais.
+url: "https://cacuspet.com.br"
+lang: pt-BR
+timezone: America/Sao_Paulo
+permalink: /blog/:year/:month/:slug/
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+feed:
+  path: blog/feed.xml
+defaults:
+  - scope: { path: "", type: "posts" }
+    values: { layout: post, author: "Cacus Pet" }
+exclude: [README.md, LICENSE, node_modules, Gemfile, Gemfile.lock]
