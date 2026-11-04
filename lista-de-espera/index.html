@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Lista de espera — Cacus Pet
+title: Lista de espera
 description: Entre na lista de espera da Cacus Pet e seja avisado quando o Cacus Pet Care e a Cacus Pet Store abrirem.
 ---
 <style>
@@ -85,6 +85,8 @@ description: Entre na lista de espera da Cacus Pet e seja avisado quando o Cacus
       website:f.website.value
     })}).then(function(r){return r.json().then(function(j){return {ok:r.ok,j:j};});}).then(function(x){
       if(!x.ok||!x.j.ok) return fail(x.j.erro||"Não deu certo agora. Tente de novo em instantes.");
+      // #41: só o perfil (tutor/vet) vai para o Umami; nada de nome ou e-mail
+      try { if (window.umami) window.umami.track("site-lista-enviada", { perfil: perfil === "veterinario_clinica" ? "vet" : "tutor" }); } catch (e) {}
       location.href="/lista-de-espera/obrigado/"+(perfil==="veterinario_clinica"?"?perfil=vet":"")+(x.j.ja_confirmado?"#ja":"");
     }).catch(function(){ fail("Sem conexão com o servidor. Tente de novo."); });
   });

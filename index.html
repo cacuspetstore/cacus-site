@@ -5,6 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Cacus Pet</title>
 <meta name="description" content="Cacus Pet: o tutor no centro do cuidado. Converse com o Cacus, organize a saúde do seu pet, compre o que ele precisa e tenha o seu veterinário junto.">
+<!-- #41: Umami (sem cookies, só nos domínios da Cacus; nada de dado pessoal em URL ou evento) -->
+<script defer src="https://cloud.umami.is/script.js"
+  data-website-id="fbd899ae-eb5e-425c-8a65-cd6ffc291c58"
+  data-domains="cacuspet.com.br,www.cacuspet.com.br,app.cacuspet.com.br,pro.cacuspet.com.br,cacuspetstore.com.br,www.cacuspetstore.com.br"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Figtree:wght@400;500;600&display=swap">
@@ -131,7 +135,7 @@ footer .legal{font-size:.72rem;opacity:.8;width:100%}
     <nav style="display:flex;align-items:center;gap:10px" aria-label="Principal">
       <a class="btn btn-line" href="/blog/">Blog</a>
       <span style="font-size:.85rem;opacity:.75">Já tem convite?</span>
-      <a class="btn btn-solid" href="https://app.cacuspet.com.br/login">Entrar</a>
+      <a class="btn btn-solid" href="https://app.cacuspet.com.br/login" data-umami-event="site-cta-entrar">Entrar</a>
     </nav>
   </header>
 
@@ -189,20 +193,20 @@ footer .legal{font-size:.72rem;opacity:.8;width:100%}
         <p>Um só cadastro liga o que você registra, o que compra e o que o seu veterinário emite. Você decide o que compartilhar.</p>
       </div>
       <nav class="orbit" aria-label="Frentes da Cacus">
-        <a class="door" href="https://cacuspetstore.com.br">
+        <a class="door" href="https://cacuspetstore.com.br" data-umami-event="site-cta-store">
           <span class="who">Para comprar</span>
           <h3>Cacus Store</h3>
           <p>A loja da Cacus, com veterinária responsável.</p>
           <ul><li>Farmácia, alimentação e cuidados</li><li>Lembrete para comprar o remédio</li><li>Envio para todo o Brasil</li></ul>
           <span class="go">Ir para a loja →</span>
         </a>
-        <a class="door center" href="/lista-de-espera/?perfil=tutor&amp;interesse=care&amp;utm_source=site&amp;utm_medium=home_card&amp;utm_campaign=lista_espera_nov26">
+        <a class="door center" data-umami-event="site-cta-care-lista" href="/lista-de-espera/?perfil=tutor&amp;interesse=care&amp;utm_source=site&amp;utm_medium=home_card&amp;utm_campaign=lista_espera_nov26">
           <span class="who">Para o tutor</span>
           <h3>Cacus Care</h3>
           <p>O app onde a saúde do seu pet mora: o assistente Cacus, carteirinha, tratamentos com alarmes, ficha de cuidados e a família toda cuidando junto.</p>
           <span class="go">Entrar na lista de espera →</span>
         </a>
-        <a class="door" href="/lista-de-espera/?perfil=vet&amp;interesse=pro&amp;utm_source=site&amp;utm_medium=home_card&amp;utm_campaign=lista_espera_nov26">
+        <a class="door" data-umami-event="site-cta-pro-lista" href="/lista-de-espera/?perfil=vet&amp;interesse=pro&amp;utm_source=site&amp;utm_medium=home_card&amp;utm_campaign=lista_espera_nov26">
           <span class="who">Para o seu veterinário</span>
           <h3>Cacus Pro</h3>
           <p>Para clínicas e profissionais que cuidam junto com você.</p>
@@ -231,8 +235,8 @@ footer .legal{font-size:.72rem;opacity:.8;width:100%}
         <div class="contact" aria-label="Contato">
           <div><span>E-mail</span><b>contato@cacuspet.com.br</b></div>
           <div><span>WhatsApp</span><b><a href="https://wa.me/5519936195680?text=Ol%C3%A1%2C%20Cacus%21%20Vim%20pelo%20site." target="_blank" rel="noopener">(19) 93619-5680</a></b></div>
-          <div><span>Loja</span><b><a href="https://cacuspetstore.com.br">cacuspetstore.com.br</a></b></div>
-          <div><span>Profissionais</span><b><a href="https://pro.cacuspet.com.br/fundadores">Programa de fundadores</a></b></div>
+          <div><span>Loja</span><b><a href="https://cacuspetstore.com.br" data-umami-event="site-cta-store">cacuspetstore.com.br</a></b></div>
+          <div><span>Profissionais</span><b><a href="https://pro.cacuspet.com.br/fundadores" data-umami-event="site-cta-fundadores">Programa de fundadores</a></b></div>
         </div>
       </div>
     </section>
