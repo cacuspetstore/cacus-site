@@ -1,0 +1,89 @@
+---
+layout: default
+title: Lista de espera — Cacus Pet
+description: Entre na lista de espera da Cacus Pet e seja avisado quando o Cacus Pet Care e a Cacus Pet Store abrirem.
+---
+<style>
+.le-hero{padding:28px 0 8px;max-width:64ch}.le-hero h1{font:800 clamp(2rem,5vw,2.8rem)/1.1 var(--f-display);margin:8px 0 10px}.le-hero p{color:var(--muted);margin:0 0 8px}
+.le-grid{display:grid;gap:28px;grid-template-columns:1fr;padding:16px 0 56px}@media(min-width:900px){.le-grid{grid-template-columns:1.1fr .9fr;align-items:start}}
+.le-form{background:var(--surface);border:1px solid var(--line);border-radius:24px;padding:26px}
+.le-form label{display:block;font-weight:600;margin:14px 0 6px}.le-form input[type=text],.le-form input[type=email],.le-form input[type=tel],.le-form select{width:100%;padding:12px 14px;border:1px solid var(--line);border-radius:12px;font:inherit;background:#fff;color:var(--ink)}
+.le-form input:focus,.le-form select:focus{outline:2px solid var(--teal);outline-offset:1px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}.chips label{margin:0;display:inline-flex;align-items:center;gap:6px;padding:8px 12px;border:1px solid var(--line);border-radius:999px;font-weight:500;cursor:pointer;background:#fff}.chips input{accent-color:var(--teal)}
+.consent{display:flex;gap:10px;align-items:flex-start;margin-top:14px;font-size:.93rem;color:var(--muted)}.consent input{margin-top:4px;accent-color:var(--teal);flex:none}
+.le-form .btn{margin-top:20px;width:100%;justify-content:center;font-size:1.05rem;padding:.9em}
+.hp{position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden}
+.erro{margin-top:12px;color:#b3412f;font-weight:600;display:none}
+.sobre{display:grid;gap:14px}.sobre .card{background:var(--surface);border:1px solid var(--line);border-radius:22px;padding:20px}.sobre h2{font:700 1.25rem/1.25 var(--f-display);margin:0 0 6px}.sobre p{margin:0;color:var(--muted)}
+.sobre .pro{background:var(--coral-soft);border-color:transparent}.sobre .pro h2{color:#8a3324}
+</style>
+<section class="le-hero">
+  <span class="eyebrow">Pré-lançamento</span>
+  <h1>Entre na lista de espera da Cacus.</h1>
+  <p>O Cacus Pet Care e a Cacus Pet Store estão quase prontos. Deixe seu contato e você recebe o convite para criar sua conta assim que abrirmos, e no máximo uma mensagem por mês até lá.</p>
+</section>
+<div class="le-grid">
+  <form class="le-form" id="le-form" novalidate>
+    <label for="le-nome">Seu nome</label>
+    <input id="le-nome" name="name" type="text" autocomplete="name" required maxlength="120">
+    <label for="le-email">E-mail</label>
+    <input id="le-email" name="email" type="email" autocomplete="email" required maxlength="160" inputmode="email">
+    <label for="le-wa">WhatsApp <span style="font-weight:400;color:var(--muted)">(opcional)</span></label>
+    <input id="le-wa" name="whatsapp" type="tel" autocomplete="tel" placeholder="DDD + número" inputmode="numeric" maxlength="20">
+    <label for="le-perfil">Você é</label>
+    <select id="le-perfil" name="profile" required>
+      <option value="">Escolha uma opção</option>
+      <option value="tutor_cao">Tutor de cão</option>
+      <option value="tutor_gato">Tutor de gato</option>
+      <option value="tutor_ambos">Tutor de cão e gato</option>
+      <option value="veterinario_clinica">Veterinário ou clínica</option>
+    </select>
+    <label>Tenho interesse em</label>
+    <div class="chips">
+      <label><input type="checkbox" name="interests" value="care" checked> Cacus Pet Care (app do tutor)</label>
+      <label><input type="checkbox" name="interests" value="store"> Cacus Pet Store (loja)</label>
+      <label><input type="checkbox" name="interests" value="pro"> Cacus Professional (veterinários)</label>
+    </div>
+    <div class="hp" aria-hidden="true"><label for="le-site">Site</label><input id="le-site" name="website" type="text" tabindex="-1" autocomplete="off"></div>
+    <label class="consent"><input type="checkbox" id="le-c-email" name="consent_email"> <span>Aceito receber por e-mail as novidades da Cacus e o convite de lançamento, no máximo uma mensagem por mês até o lançamento. Posso sair da lista a qualquer momento pelo link que vai em cada e-mail. <a href="https://app.cacuspet.com.br/privacidade" target="_blank" rel="noopener">Política de privacidade</a>.</span></label>
+    <label class="consent" id="le-c-wa-wrap" hidden><input type="checkbox" id="le-c-wa" name="consent_whatsapp"> <span>Aceito também receber essas mesmas novidades no WhatsApp, no máximo uma mensagem por mês, e posso sair respondendo SAIR.</span></label>
+    <button class="btn btn-solid" type="submit" id="le-btn">Quero ser avisado</button>
+    <p class="erro" id="le-erro" role="alert"></p>
+    <p style="margin:14px 0 0;font-size:.85rem;color:var(--muted)">Você vai receber um e-mail para confirmar o cadastro. Sem confirmação, nada é enviado.</p>
+  </form>
+  <aside class="sobre">
+    <div class="card"><h2>Cacus Pet Care</h2><p>O app do tutor: carteirinha digital, lembretes de vacina, vermífugo e remédio, histórico do pet e o Cacus, que entende o que você conta e organiza tudo.</p></div>
+    <div class="card"><h2>Cacus Pet Store</h2><p>A loja da Cacus, com o que seu pet precisa e a responsabilidade técnica de uma médica veterinária na venda de medicamentos.</p></div>
+    <div class="card pro"><h2>Veterinário ou clínica?</h2><p>O Cacus Professional emite laudos, organiza a agenda e conecta você ao tutor. O programa de clínicas fundadoras já está aberto: <a href="https://pro.cacuspet.com.br/fundadores">conheça</a>.</p></div>
+  </aside>
+</div>
+<script>
+(function(){
+  var API="https://kzgozlvyxyhgsshvphkd.supabase.co/functions/v1/lista-espera", CONSENT_VERSION="2026-11-03";
+  var q=new URLSearchParams(location.search);
+  var f=document.getElementById("le-form"), erro=document.getElementById("le-erro"), btn=document.getElementById("le-btn");
+  var wa=document.getElementById("le-wa"), waWrap=document.getElementById("le-c-wa-wrap"), cWa=document.getElementById("le-c-wa");
+  wa.addEventListener("input",function(){ var on=wa.value.replace(/\D/g,"").length>=10; waWrap.hidden=!on; if(!on) cWa.checked=false; });
+  function fail(m){ erro.textContent=m; erro.style.display="block"; btn.disabled=false; btn.textContent="Quero ser avisado"; }
+  f.addEventListener("submit",function(e){
+    e.preventDefault(); erro.style.display="none";
+    var nome=f.name.value.trim(), email=f.email.value.trim(), perfil=f.profile.value;
+    if(!nome) return fail("Escreva seu nome.");
+    if(!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email)) return fail("Confira o e-mail.");
+    if(!perfil) return fail("Escolha se você é tutor ou profissional.");
+    var waDig=wa.value.replace(/\D/g,""); if(waDig && !/^\d{10,13}$/.test(waDig)) return fail("WhatsApp: use DDD + número, só dígitos.");
+    if(!document.getElementById("le-c-email").checked) return fail("Para entrar na lista, marque o consentimento de e-mail.");
+    btn.disabled=true; btn.textContent="Enviando…";
+    var interests=[].slice.call(f.querySelectorAll('input[name=interests]:checked')).map(function(x){return x.value;});
+    fetch(API,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({
+      name:nome,email:email,whatsapp:waDig,profile:perfil,interests:interests,
+      consent_email:true,consent_whatsapp:!!(waDig&&cWa.checked),consent_version:CONSENT_VERSION,
+      utm_source:q.get("utm_source")||"",utm_medium:q.get("utm_medium")||"",utm_campaign:q.get("utm_campaign")||"",
+      website:f.website.value
+    })}).then(function(r){return r.json().then(function(j){return {ok:r.ok,j:j};});}).then(function(x){
+      if(!x.ok||!x.j.ok) return fail(x.j.erro||"Não deu certo agora. Tente de novo em instantes.");
+      location.href="/lista-de-espera/obrigado/"+(perfil==="veterinario_clinica"?"?perfil=vet":"")+(x.j.ja_confirmado?"#ja":"");
+    }).catch(function(){ fail("Sem conexão com o servidor. Tente de novo."); });
+  });
+})();
+</script>
