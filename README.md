@@ -29,5 +29,5 @@ Página institucional da Cacus Pet (cacuspet.com.br) e o **Blog da Cacus** (cacu
 - Português do Brasil, direto, sem jargão. Marca sempre "Cacus" (nunca "Cacús"); o assistente é "o Cacus".
 - Posts para tutores e profissionais recebem automaticamente o aviso "não substitui a consulta veterinária". Nunca recomendar dose, remédio ou tratamento específico.
 - Não citar a cidade da sede. Não divulgar o número de vagas do programa de clínicas fundadoras ("restam poucas vagas" é o máximo).
-- Links para produtos: Care `https://app.cacuspet.com.br/login`, Pro `https://pro.cacuspet.com.br/fundadores`, Store `https://cacuspetstore.com.br`. O layout já coloca a chamada final conforme o `publico`.
+- Links para produtos (beta fechado): Care e Pro entram pela lista de espera, `/lista-de-espera/?perfil=tutor&interesse=care` (tutor) e `/lista-de-espera/?perfil=vet&interesse=pro` (profissional), sempre com `utm_source`/`utm_medium`/`utm_campaign`; o programa de fundadores segue em `https://pro.cacuspet.com.br/fundadores`; Store `https://cacuspetstore.com.br`. O único link para o login do Care é o "Entrar" do cabeçalho ("Já tem convite?"), para quem já foi convidado. O layout já coloca a chamada final conforme o `publico`.
 - Imagens: só com direito de uso; salvar em `assets/blog/` e referenciar com caminho absoluto (`/assets/blog/arquivo.jpg`).

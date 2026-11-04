@@ -63,6 +63,9 @@ description: Entre na lista de espera da Cacus Pet e seja avisado quando o Cacus
   var q=new URLSearchParams(location.search);
   var f=document.getElementById("le-form"), erro=document.getElementById("le-erro"), btn=document.getElementById("le-btn");
   var wa=document.getElementById("le-wa"), waWrap=document.getElementById("le-c-wa-wrap"), cWa=document.getElementById("le-c-wa");
+  // ?perfil=tutor|vet e ?interesse=care|store|pro chegam dos botões do site e do blog; tudo continua editável
+  var pf={tutor:"tutor_cao",vet:"veterinario_clinica"}[q.get("perfil")]; if(pf) f.profile.value=pf;
+  var it=q.get("interesse"); if(/^(care|store|pro)$/.test(it||"")) [].forEach.call(f.querySelectorAll("input[name=interests]"),function(x){ x.checked=(x.value===it); });
   wa.addEventListener("input",function(){ var on=wa.value.replace(/\D/g,"").length>=10; waWrap.hidden=!on; if(!on) cWa.checked=false; });
   function fail(m){ erro.textContent=m; erro.style.display="block"; btn.disabled=false; btn.textContent="Quero ser avisado"; }
   f.addEventListener("submit",function(e){
