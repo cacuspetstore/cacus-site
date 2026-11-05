@@ -46,8 +46,14 @@ O RG Animal não é obrigatório e **não substitui a [carteira de vacinação](
 
 Tirou o RG? Agora ele vira mais um PDF perdido no celular, ao lado da carteira de vacinação em papel e dos exames no WhatsApp.
 
-> **Aqui na Cacus, seu pet vai ganhar uma carteirinha digital com o número do RG Animal, as vacinas e os documentos dele num lugar só.** Pronta para mostrar no veterinário, no hotel ou na viagem.
->
+Na Cacus, ele vai junto com o resto da saúde do pet:
+
+- **Na carteirinha digital do Cacus Pet Care**, o número do RG Animal fica ao lado do Cacus ID (a identificação do seu pet na Cacus), das vacinas, das alergias e dos cuidados. Você digita o número ou manda a foto da carteira oficial para o Cacus, que lê o documento e pede a sua confirmação antes de salvar.
+- **Na carteirinha física da Cacus**, do tamanho de um cartão de crédito, o número do RG Animal vem impresso com a foto e os dados do pet. No verso, um QR Code abre a carteirinha digital sempre atualizada, para mostrar na clínica, no hotel, no banho e tosa ou para quem cuida do pet.
+
+A carteirinha Cacus não substitui o documento oficial do governo: ela guarda o número do RG Animal e acompanha a saúde do pet no dia a dia.
+
+> **O Cacus Pet Care está em beta.**
 > **[Entre na fila de espera](/lista-de-espera/?perfil=tutor&interesse=care&utm_source=blog&utm_medium=artigo&utm_campaign=rg_animal_nov26){: data-umami-event="site-cta-blog-lista"}** e seja um dos primeiros a ter a carteirinha do seu pet.
 
 O Cacus Pet Care conecta você ao veterinário do seu pet. Você conta o que aconteceu, por voz, e o Cacus organiza o histórico; quando precisar, compartilha a carteirinha com um link.
@@ -70,7 +76,7 @@ Não para tirar o RG. Se ele tiver, informe o número no cadastro.
 No SinPatinhas, não: o cadastro é só para cães e gatos.
 
 **A Cacus emite o RG Animal?**
-Não. O RG oficial é emitido só pelo SinPatinhas. Na Cacus, você guarda o número dele na carteirinha digital do pet, junto com vacinas e documentos.
+Não. O RG oficial é emitido só pelo SinPatinhas. Na Cacus, você guarda o número dele na carteirinha digital do pet (e na carteirinha física, se quiser), junto com vacinas e documentos.
 
 **O RG substitui a carteira de vacinação?**
 Não. As vacinas continuam registradas e assinadas pelo veterinário.
