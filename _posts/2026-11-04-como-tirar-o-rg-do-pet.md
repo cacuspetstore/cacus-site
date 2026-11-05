@@ -1,10 +1,10 @@
 ---
 title: "Como tirar o RG do seu pet de graça, passo a passo"
-description: "Veja o passo a passo para tirar o RG Animal grátis no SinPatinhas, com QR Code para a coleira, e mantenha tudo na carteirinha do seu pet."
+description: "Passo a passo para tirar o RG Animal (Carteira de Identidade Animal) grátis no SinPatinhas, com QR Code para a coleira e tudo na carteirinha do pet."
 publico: tutores
 ---
 
-Seu cachorro ou gato pode ter RG, de graça e sem sair de casa. O RG Animal é emitido pelo SinPatinhas, o cadastro nacional do Governo Federal, e leva cerca de dez minutos pelo gov.br. No fim, você recebe uma carteirinha com foto e um QR Code para prender na coleira: se o pet se perder, quem o encontrar consegue falar com você.
+Seu cachorro ou gato pode ter RG, de graça e sem sair de casa. O RG Animal — oficialmente, a **Carteira de Identidade Animal** — é emitido pelo SinPatinhas, o cadastro nacional do Governo Federal, e leva cerca de dez minutos pelo gov.br. No fim, você recebe uma carteirinha com foto e um QR Code para prender na coleira: se o pet se perder, quem o encontrar consegue falar com você.
 
 Veja o passo a passo completo e, no final, como manter o RG sempre à mão junto com as vacinas do seu pet.
 
@@ -12,7 +12,12 @@ Veja o passo a passo completo e, no final, como manter o RG sempre à mão junto
 
 O SinPatinhas é o Sistema do Cadastro Nacional de Animais Domésticos, lançado em abril de 2025 pelo Ministério do Meio Ambiente. O cadastro é **voluntário, gratuito e vale para cães e gatos**. Seu pet não precisa ter microchip nem ser castrado para tirar o RG.
 
-**O que você precisa:** uma conta gov.br (nível bronze, prata ou ouro) e uma foto nítida do pet, de frente.
+**O que separar antes:**
+
+- Sua **conta gov.br** (nível bronze, prata ou ouro).
+- Uma **foto nítida do pet, de frente**, com boa luz e o rosto inteiro aparecendo.
+- Os **dados do pet**: nome, espécie, data de nascimento (pode ser aproximada), cor da pelagem e se é castrado.
+- O **número do microchip**, se ele tiver.
 
 ## Passo a passo do RG Animal
 
@@ -26,6 +31,8 @@ O SinPatinhas é o Sistema do Cadastro Nacional de Animais Domésticos, lançado
 8. Na área do tutor, baixe o documento. Imprima o QR Code e prenda na coleira.
 
 **Dica:** quem escaneia o QR Code vê só os dados que você liberou, como o telefone para contato. Teste o código com o seu celular antes de colocar na coleira.
+
+Tem mais de um pet? Repita o cadastro para cada um. E se algo mudar (castração, microchip, telefone), atualize no próprio SinPatinhas para o documento oficial continuar correto.
 
 ## Para que serve o RG Animal
 
@@ -49,6 +56,9 @@ O Cacus Pet Care conecta você ao veterinário do seu pet. Você conta o que aco
 
 **O RG do pet é obrigatório?**
 Não. O cadastro no SinPatinhas é voluntário.
+
+**Quanto tempo demora?**
+O cadastro leva cerca de dez minutos, e o documento fica disponível na área do tutor logo ao final.
 
 **Preciso pagar para tirar o RG Animal?**
 Não. O RG do SinPatinhas é gratuito. Sites que cobram por uma "carteirinha de RG pet" não emitem o documento oficial.
