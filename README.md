@@ -27,7 +27,7 @@ Página institucional da Cacus Pet (cacuspet.com.br) e o **Blog da Cacus** (cacu
 ## Medição (#41)
 
 - Umami Cloud (sem cookies, dispensa banner) no `_includes/head.html` e no `index.html`; o mesmo ID vale para todos os endereços da Cacus e o painel separa por hostname. O `data-domains` impede contar `localhost` e prévias.
-- Eventos do site: `site-cta-care-lista`, `site-cta-pro-lista`, `site-cta-store`, `site-cta-entrar`, `site-cta-blog-lista`, `site-cta-fundadores` (atributo `data-umami-event`) e `site-lista-enviada` (propriedade `perfil` = tutor/veterinario/clinica). Nunca mandar nome, e-mail ou id em evento ou URL.
+- Eventos do site: `site-cta-care-cadastro` (desde 06/11/2026; antes `site-cta-care-lista`), `site-cta-pro-lista`, `site-cta-store`, `site-cta-entrar`, `site-cta-blog-lista`, `site-cta-fundadores` (atributo `data-umami-event`) e `site-lista-enviada` (propriedade `perfil` = tutor/veterinario/clinica). Nunca mandar nome, e-mail ou id em evento ou URL.
 - `sitemap.xml` e `robots.txt` saem do plugin `jekyll-sitemap`; páginas de redirecionamento e de confirmação usam `sitemap: false` e `noindex`.
 
 ## Regras de conteúdo
@@ -35,5 +35,5 @@ Página institucional da Cacus Pet (cacuspet.com.br) e o **Blog da Cacus** (cacu
 - Português do Brasil, direto, sem jargão. Marca sempre "Cacus" (nunca "Cacús"); o assistente é "o Cacus".
 - Posts para tutores e profissionais recebem automaticamente o aviso "não substitui a consulta veterinária". Nunca recomendar dose, remédio ou tratamento específico.
 - Não citar a cidade da sede. Não divulgar o número de vagas do programa de clínicas fundadoras ("restam poucas vagas" é o máximo).
-- Links para produtos (beta fechado): Care e Pro entram pela lista de espera, `/lista-de-espera/?perfil=tutor&interesse=care` (tutor) e `/lista-de-espera/?perfil=vet&interesse=pro` (profissional), sempre com `utm_source`/`utm_medium`/`utm_campaign`; o programa de fundadores segue em `https://pro.cacuspet.com.br/fundadores`; Store `https://cacuspetstore.com.br`. O único link para o login do Care é o "Entrar" do cabeçalho ("Já tem convite?"), para quem já foi convidado. O layout já coloca a chamada final conforme o `publico`.
+- Links para produtos: desde 06/11/2026 o cadastro está aberto (Backoffice → `signup_mode = aberto`). Care leva direto a `https://app.cacuspet.com.br/login` com o botão "Criar a carteirinha do meu pet"; Pro segue pela lista de espera, `/lista-de-espera/?perfil=vet&interesse=pro`; sempre com `utm_source`/`utm_medium`/`utm_campaign`; o programa de fundadores segue em `https://pro.cacuspet.com.br/fundadores`; Store `https://cacuspetstore.com.br`. O "Entrar" do cabeçalho ("Já tem conta?") é para quem já tem conta. O layout já coloca a chamada final conforme o `publico`.
 - Imagens: só com direito de uso; salvar em `assets/blog/` e referenciar com caminho absoluto (`/assets/blog/arquivo.jpg`).
