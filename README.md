@@ -27,7 +27,7 @@ Página institucional da Cacus Pet (cacuspet.com.br) e o **Blog da Cacus** (cacu
 ## Medição (#41)
 
 - Umami Cloud (sem cookies, dispensa banner) no `_includes/head.html` e no `index.html`; o mesmo ID vale para todos os endereços da Cacus e o painel separa por hostname. O `data-domains` impede contar `localhost` e prévias.
-- Eventos do site: `site-cta-care-lista`, `site-cta-pro-lista`, `site-cta-store`, `site-cta-entrar`, `site-cta-blog-lista`, `site-cta-fundadores` (atributo `data-umami-event`) e `site-lista-enviada` (propriedade `perfil` = tutor/vet). Nunca mandar nome, e-mail ou id em evento ou URL.
+- Eventos do site: `site-cta-care-lista`, `site-cta-pro-lista`, `site-cta-store`, `site-cta-entrar`, `site-cta-blog-lista`, `site-cta-fundadores` (atributo `data-umami-event`) e `site-lista-enviada` (propriedade `perfil` = tutor/veterinario/clinica). Nunca mandar nome, e-mail ou id em evento ou URL.
 - `sitemap.xml` e `robots.txt` saem do plugin `jekyll-sitemap`; páginas de redirecionamento e de confirmação usam `sitemap: false` e `noindex`.
 
 ## Regras de conteúdo

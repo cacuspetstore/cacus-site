@@ -33,11 +33,18 @@ description: Entre na lista de espera da Cacus Pet e seja avisado quando o Cacus
     <label for="le-perfil">Você é</label>
     <select id="le-perfil" name="profile" required>
       <option value="">Escolha uma opção</option>
-      <option value="tutor_cao">Tutor de cão</option>
-      <option value="tutor_gato">Tutor de gato</option>
-      <option value="tutor_ambos">Tutor de cão e gato</option>
-      <option value="veterinario_clinica">Veterinário ou clínica</option>
+      <option value="tutor">Tutor</option>
+      <option value="veterinario">Veterinário</option>
+      <option value="clinica">Clínica</option>
     </select>
+    <div id="le-pets" hidden>
+      <label>Seus pets <span style="font-weight:400;color:var(--muted)">(opcional)</span></label>
+      <div class="chips">
+        <label><input type="checkbox" name="pet_species" value="cao"> Cão</label>
+        <label><input type="checkbox" name="pet_species" value="gato"> Gato</label>
+        <label><input type="checkbox" name="pet_species" value="outros"> Outros</label>
+      </div>
+    </div>
     <label>Tenho interesse em</label>
     <div class="chips">
       <label><input type="checkbox" name="interests" value="care" checked> Cacus Pet Care (app do tutor)</label>
@@ -63,8 +70,11 @@ description: Entre na lista de espera da Cacus Pet e seja avisado quando o Cacus
   var q=new URLSearchParams(location.search);
   var f=document.getElementById("le-form"), erro=document.getElementById("le-erro"), btn=document.getElementById("le-btn");
   var wa=document.getElementById("le-wa"), waWrap=document.getElementById("le-c-wa-wrap"), cWa=document.getElementById("le-c-wa");
-  // ?perfil=tutor|vet e ?interesse=care|store|pro chegam dos botões do site e do blog; tudo continua editável
-  var pf={tutor:"tutor_cao",vet:"veterinario_clinica"}[q.get("perfil")]; if(pf) f.profile.value=pf;
+  // ?perfil=tutor|vet|veterinario|clinica e ?interesse=care|store|pro chegam dos botões do site e do blog; tudo continua editável
+  var pets=document.getElementById("le-pets");
+  function mostrarPets(){ var t=f.profile.value==="tutor"; pets.hidden=!t; if(!t) [].forEach.call(f.querySelectorAll("input[name=pet_species]"),function(x){ x.checked=false; }); }
+  var pf={tutor:"tutor",vet:"veterinario",veterinario:"veterinario",clinica:"clinica"}[q.get("perfil")]; if(pf) f.profile.value=pf;
+  f.profile.addEventListener("change",mostrarPets); mostrarPets();
   var it=q.get("interesse"); if(/^(care|store|pro)$/.test(it||"")) [].forEach.call(f.querySelectorAll("input[name=interests]"),function(x){ x.checked=(x.value===it); });
   wa.addEventListener("input",function(){ var on=wa.value.replace(/\D/g,"").length>=10; waWrap.hidden=!on; if(!on) cWa.checked=false; });
   function fail(m){ erro.textContent=m; erro.style.display="block"; btn.disabled=false; btn.textContent="Quero ser avisado"; }
@@ -73,21 +83,22 @@ description: Entre na lista de espera da Cacus Pet e seja avisado quando o Cacus
     var nome=f.name.value.trim(), email=f.email.value.trim(), perfil=f.profile.value;
     if(!nome) return fail("Escreva seu nome.");
     if(!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email)) return fail("Confira o e-mail.");
-    if(!perfil) return fail("Escolha se você é tutor ou profissional.");
+    if(!perfil) return fail("Escolha se você é tutor, veterinário ou clínica.");
     var waDig=wa.value.replace(/\D/g,""); if(waDig && !/^\d{10,13}$/.test(waDig)) return fail("WhatsApp: use DDD + número, só dígitos.");
     if(!document.getElementById("le-c-email").checked) return fail("Para entrar na lista, marque o consentimento de e-mail.");
     btn.disabled=true; btn.textContent="Enviando…";
     var interests=[].slice.call(f.querySelectorAll('input[name=interests]:checked')).map(function(x){return x.value;});
+    var especies=perfil==="tutor"?[].slice.call(f.querySelectorAll('input[name=pet_species]:checked')).map(function(x){return x.value;}):[];
     fetch(API,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({
-      name:nome,email:email,whatsapp:waDig,profile:perfil,interests:interests,
+      name:nome,email:email,whatsapp:waDig,profile:perfil,pet_species:especies,interests:interests,
       consent_email:true,consent_whatsapp:!!(waDig&&cWa.checked),consent_version:CONSENT_VERSION,
       utm_source:q.get("utm_source")||"",utm_medium:q.get("utm_medium")||"",utm_campaign:q.get("utm_campaign")||"",
       website:f.website.value
     })}).then(function(r){return r.json().then(function(j){return {ok:r.ok,j:j};});}).then(function(x){
       if(!x.ok||!x.j.ok) return fail(x.j.erro||"Não deu certo agora. Tente de novo em instantes.");
-      // #41: só o perfil (tutor/vet) vai para o Umami; nada de nome ou e-mail
-      try { if (window.umami) window.umami.track("site-lista-enviada", { perfil: perfil === "veterinario_clinica" ? "vet" : "tutor" }); } catch (e) {}
-      location.href="/lista-de-espera/obrigado/"+(perfil==="veterinario_clinica"?"?perfil=vet":"")+(x.j.ja_confirmado?"#ja":"");
+      // #41/#56: só o perfil (tutor/veterinario/clinica) vai para o Umami; nada de nome ou e-mail
+      try { if (window.umami) window.umami.track("site-lista-enviada", { perfil: perfil }); } catch (e) {}
+      location.href="/lista-de-espera/obrigado/"+(perfil!=="tutor"?"?perfil=vet":"")+(x.j.ja_confirmado?"#ja":"");
     }).catch(function(){ fail("Sem conexão com o servidor. Tente de novo."); });
   });
 })();
