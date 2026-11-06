@@ -2,7 +2,7 @@
 title: "Documentos do pet: o que vale em cada situação"
 description: "Consulta, hotel, banho e tosa, pet sitter, viagem de carro, ônibus ou avião e viagem para outro país: quais documentos do seu pet costumam ser pedidos e onde a carteirinha Cacus ajuda."
 publico: tutores
-published: false
+published: true
 ---
 
 Carteira de vacinação, atestado de saúde, RG Animal, CVI: cada situação pede um documento diferente, e quase sempre alguém pergunta na hora errada. Este guia mostra o que costuma ser pedido em cada caso e o que vale de verdade. As regras de viagem vêm das fontes oficiais listadas no fim, consultadas em 6 de novembro de 2026.
