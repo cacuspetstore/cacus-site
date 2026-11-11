@@ -54,4 +54,4 @@ Se o seu pet é macho, aproveite o mês para:
 
 Esse último ponto é onde a maioria das famílias se perde: o sinal aparece, some, volta, e ninguém lembra quando começou. Ter o histórico do pet num lugar só — sintomas, consultas, exames e laudos — faz a próxima consulta render mais.
 
-**Quer ser avisado quando o Cacus Pet Care abrir para novas famílias?** [Entre na lista de espera](https://cacuspet.com.br/lista-de-espera/?utm_source=blog&utm_medium=artigo&utm_campaign=lista_espera_nov26) — é gratuito e você recebe no máximo uma mensagem por mês.
+**O Cacus Pet Care já está aberto e é grátis.** [Crie a carteirinha do seu pet](https://app.cacuspet.com.br/login?utm_source=blog&utm_medium=artigo&utm_campaign=novembro_azul_nov26){: data-umami-event="site-cta-care-cadastro"} e anote os sinais e o check-up anual no histórico dele.
