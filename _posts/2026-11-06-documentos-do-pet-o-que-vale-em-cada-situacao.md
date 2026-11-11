@@ -75,7 +75,7 @@ O MAPA recomenda ler as exigências do país de destino com antecedência. **Com
 
 O RG Animal identifica o seu pet no SinPatinhas, o cadastro nacional, e ajuda em campanhas públicas e na devolução de pets perdidos. Ele é gratuito e se tira pelo gov.br. Não substitui vacina, atestado nem CVI. Na carteirinha Cacus, ele aparece junto com o Cacus ID.
 
-> **O Cacus Pet Care está em beta.** [Entre na lista de espera](/lista-de-espera/?perfil=tutor&interesse=care&utm_source=blog&utm_medium=artigo&utm_campaign=documentos_pet){: data-umami-event="site-cta-blog-lista"} para ter a carteirinha e os documentos do seu pet num lugar só.
+> **A carteirinha do Cacus Pet Care é grátis.** [Crie a carteirinha do seu pet](https://app.cacuspet.com.br/login?utm_source=blog&utm_medium=artigo&utm_campaign=documentos_pet){: data-umami-event="site-cta-care-cadastro"} para ter as vacinas e os documentos dele num lugar só.
 
 ## Fontes oficiais (consultadas em 6 de novembro de 2026)
 

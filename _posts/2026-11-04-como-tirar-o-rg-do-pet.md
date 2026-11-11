@@ -53,8 +53,8 @@ Na Cacus, ele vai junto com o resto da saúde do pet:
 
 A carteirinha Cacus não substitui o documento oficial do governo: ela guarda o número do RG Animal e acompanha a saúde do pet no dia a dia.
 
-> **O Cacus Pet Care está em beta.**
-> **[Entre na fila de espera](/lista-de-espera/?perfil=tutor&interesse=care&utm_source=blog&utm_medium=artigo&utm_campaign=rg_animal_nov26){: data-umami-event="site-cta-blog-lista"}** e seja um dos primeiros a ter a carteirinha do seu pet.
+> **A carteirinha do Cacus Pet Care é grátis.**
+> **[Criar a carteirinha do meu pet](https://app.cacuspet.com.br/login?utm_source=blog&utm_medium=artigo&utm_campaign=rg_animal_nov26){: data-umami-event="site-cta-care-cadastro"}** e guarde o RG, as vacinas e os documentos num lugar só.
 
 O Cacus Pet Care conecta você ao veterinário do seu pet. Você conta o que aconteceu, por voz, e o Cacus organiza o histórico; quando precisar, compartilha a carteirinha com um link.
 
