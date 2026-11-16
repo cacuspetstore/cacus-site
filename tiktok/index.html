@@ -2,6 +2,12 @@
 layout: null
 sitemap: false
 ---
-<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><title>Cacus Pet</title><meta name="robots" content="noindex">
-<meta http-equiv="refresh" content="0; url=/lista-de-espera/?utm_source=tiktok&utm_medium=bio&utm_campaign=lista_espera_nov26"><link rel="canonical" href="/lista-de-espera/?utm_source=tiktok&utm_medium=bio&utm_campaign=lista_espera_nov26">
-<script>location.replace("/lista-de-espera/?utm_source=tiktok&utm_medium=bio&utm_campaign=lista_espera_nov26");</script></head><body><a href="/lista-de-espera/?utm_source=tiktok&utm_medium=bio&utm_campaign=lista_espera_nov26">Entrar na lista de espera da Cacus</a></body></html>
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><title>Cacus Pet</title><meta name="robots" content="noindex"><meta name="viewport" content="width=device-width, initial-scale=1">
+<noscript><meta http-equiv="refresh" content="0; url=https://app.cacuspet.com.br/login?criar=1&amp;utm_source=tiktok&amp;utm_medium=bio&amp;utm_campaign=cadastro_aberto_nov26"></noscript><link rel="canonical" href="https://app.cacuspet.com.br/login?criar=1&amp;utm_source=tiktok&amp;utm_medium=bio&amp;utm_campaign=cadastro_aberto_nov26">
+<script>(function(){var D="https://app.cacuspet.com.br/login?criar=1&utm_source=tiktok&utm_medium=bio&utm_campaign=cadastro_aberto_nov26",W="fbd899ae-eb5e-425c-8a65-cd6ffc291c58",ok=0;function go(){if(!ok){ok=1;location.replace(D);}}
+// #bio: evento e acesso vão direto à API do Umami (o script dele não carrega a tempo); só a origem, nada de dado pessoal
+try{var off=false;try{off=!!localStorage.getItem("umami.disabled")}catch(e){}
+if(!off&&window.fetch){var u=new URL(D),b={website:W,hostname:location.hostname,language:navigator.language,screen:screen.width+"x"+screen.height,title:document.title,referrer:document.referrer,url:location.pathname+u.search};
+function s(t,p){return fetch("https://gateway.umami.is/api/send",{method:"POST",keepalive:true,credentials:"omit",headers:{"Content-Type":"application/json"},body:JSON.stringify({type:t,payload:p})}).catch(function(){})}
+Promise.all([s("event",b),s("event",Object.assign({},b,{name:"bio-clique",data:{origem:"tiktok"}}))]).then(go);}}catch(e){}
+setTimeout(go,300);})();</script></head><body><a href="https://app.cacuspet.com.br/login?criar=1&amp;utm_source=tiktok&amp;utm_medium=bio&amp;utm_campaign=cadastro_aberto_nov26">Criar a carteirinha do meu pet</a></body></html>

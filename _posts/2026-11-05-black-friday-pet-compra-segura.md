@@ -48,6 +48,6 @@ Dose e duração são sempre definidas pelo profissional.
 
 A melhor oferta é a que cuida do seu pet sem atalhos.
 
-> **Na Cacus, estamos preparando a Cacus Store**, com produtos e medicamentos veterinários e acompanhamento de uma responsável técnica veterinária. [Entre na lista de espera](/lista-de-espera/?perfil=tutor&interesse=store&utm_source=blog&utm_medium=artigo&utm_campaign=black_friday_nov26){: data-umami-event="site-cta-blog-lista"} e seja avisado quando abrirmos.
+> **Na Cacus, estamos preparando a Cacus Store**, com produtos e medicamentos veterinários e acompanhamento de uma responsável técnica veterinária. Enquanto ela não abre, [crie a carteirinha do seu pet no Cacus Care](https://app.cacuspet.com.br/login?criar=1&utm_source=blog&utm_medium=artigo&utm_campaign=cadastro_aberto_nov26){: data-umami-event="site-cta-care-cadastro"}: é grátis e guarda vacinas, remédios e o histórico do pet.
 
 <small>Fontes: [Itatiaia, banalização do ômega-3 (17/08/2025)](https://www.itatiaia.com.br/pets-e-animais/banalizacao-do-omega-3-no-cuidado-dos-pets-pode-mascarar-problemas-reais-de-saude/) · [A Gazeta, "5 erros comuns ao medicar seu pet sem orientação" (01/05/2026)](https://www.agazeta.com.br/hz/pet/5-erros-comuns-ao-medicar-seu-pet-sem-orientacao-de-um-medico-veterinario-0526) · [Decreto 7.962/2013](https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2013/decreto/d7962.htm) · [Código de Defesa do Consumidor](https://www.planalto.gov.br/ccivil_03/leis/l8078compilado.htm)</small>

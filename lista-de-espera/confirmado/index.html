@@ -1,15 +1,16 @@
 ---
 layout: default
 title: Pronto, você está na lista!
-description: E-mail confirmado na lista de espera da Cacus.
+description: E-mail confirmado na lista de espera do Cacus Pro.
 sitemap: false
 ---
 <meta name="robots" content="noindex">
 <section class="blog-hero" style="padding:40px 0 56px;max-width:60ch">
-  <span class="eyebrow">Lista de espera</span>
+  <span class="eyebrow">Lista de espera do Cacus Pro</span>
   <h1>Pronto, você está na lista!</h1>
-  <p>Obrigado por confirmar. Até o lançamento você recebe no máximo uma mensagem por mês, e o convite para criar a sua conta chega por e-mail.</p>
+  <p>Obrigado por confirmar. Até o lançamento do Cacus Pro você recebe no máximo uma mensagem por mês, e o convite para criar a sua conta no Pro chega por e-mail.</p>
   <p id="vet" hidden style="margin-top:12px">Você marcou que é veterinário ou clínica: o programa de clínicas fundadoras já está aberto. <a class="btn btn-solid" style="margin-top:10px" href="https://pro.cacuspet.com.br/fundadores">Conhecer o programa</a></p>
+  <p id="tutor" hidden style="margin-top:12px">É tutor? O Cacus Care já está aberto: crie a carteirinha do seu pet agora, é grátis. <a class="btn btn-solid" style="margin-top:10px" href="https://app.cacuspet.com.br/login?criar=1&amp;utm_source=site&amp;utm_medium=lista_redirect&amp;utm_campaign=cadastro_aberto_nov26" data-umami-event="site-cta-care-cadastro">Criar a carteirinha do meu pet</a></p>
   <p style="margin-top:20px"><a class="btn btn-line" href="/">Voltar ao início</a> <a class="btn btn-line" href="/blog/">Ler o blog</a></p>
 </section>
-<script>if(new URLSearchParams(location.search).get("perfil")==="vet")document.getElementById("vet").hidden=false;</script>
+<script>if(new URLSearchParams(location.search).get("perfil")==="vet")document.getElementById("vet").hidden=false;else document.getElementById("tutor").hidden=false;</script>
